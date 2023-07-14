@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background:#202020;
+    font-family: 'Lilita One', cursive;
+}
+h1 {
+    font-size:1.4em;
+  background: -webkit-linear-gradient(45deg,orangered,orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:bolder;
+  letter-spacing:2px;
+}
+
+#canvas-container {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#output-canvas {
+  max-width: 100%;
+  max-height: 500px;
+  border: 1px solid #ddd;
+}
+.file-upload {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 10px;
+  width:95%;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-upload label {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.5rem;
+  font-weight:bolder;
+}
+
+.file-upload label:hover {
+  background-color: #2980b9;
+}
+
+.file-upload span {
+  font-size: 16px;
+  letter-spacing:1px;
+}
+
+.file-upload input[type="file"] ~ span {
+  margin-left: 10px;
+  color: #777;
+}
+.btn-container{
+    width:fit;
+    height:fit;
+    padding:0.5rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+#object-names{
+    width:80%;
+    height:fit;
+    background:lavender;
+    color:#202020;
+    font-weight:bolder;
+    padding:0.6rem;
+    font-size:1em;
+    margin: auto;
+    border-radius:0.5rem;
+    letter-spacing:1px;
+}
